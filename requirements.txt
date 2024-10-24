@@ -1,7 +1,7 @@
 fastapi==0.100.0
 uvicorn==0.22.0
 pydantic==2.0.3
-SQLAlchemy==2.0.15
+SQLAlchemy==1.4.47
 shortuuid==1.0.11
 redis==4.5.3         # Downgraded redis version to avoid conflicts
 fastapi-limiter==0.1.5
