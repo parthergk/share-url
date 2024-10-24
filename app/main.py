@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.routers import groups, items  # Corrected relative imports to absolute imports
-from app.utils import setup_redis  # Assuming the utils.py file has setup_redis function
+from app.routers import groups, items
+from app.utils import setup_redis
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -13,10 +13,10 @@ async def startup():
 # Middleware for CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins (you can restrict this in production)
+    allow_origins=["chrome-extension://dbjdlhhkkdnnahcobbmnnjikkmmdnpgn"],  # Add the Chrome extension ID here
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Include Routers
