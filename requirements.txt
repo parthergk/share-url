@@ -1,9 +1,9 @@
-fastapi==0.100.0         # FastAPI for the web framework
-uvicorn==0.22.0          # ASGI server to run FastAPI
-pydantic==2.0.3          # Data validation and serialization
-SQLAlchemy==2.0.15       # ORM for database interaction
-shortuuid==1.0.11        # Library for generating short unique IDs
-redis==4.5.3             # Redis client for Python (for rate-limiting)
-fastapi-limiter==0.3.2   # Rate limiter using Redis
-databases==0.5.3         # Optional: Use this if planning async DB operations
-python-dotenv==1.0.0     # For loading environment variables (if needed)
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.2
+SQLAlchemy==2.0.23
+shortuuid==1.0.11
+redis==5.0.1
+fastapi-limiter==0.1.5
+databases[postgresql]==0.8.0
+python-dotenv==1.0.0    
